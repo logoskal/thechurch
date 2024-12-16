@@ -15,3 +15,8 @@ def socials(request):
 
 def socials(request):
     return render(request, template_name='home/socials.html')
+
+links = """
+        http://youtube.com/@EMislene
+        
+"""

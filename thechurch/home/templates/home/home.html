@@ -13,34 +13,51 @@
 				</div>
 			</div>
 
-			<div class="row mt-5 justify-content-center" data-aos="fade-up" data-aos-delay="200">
-				<div class="col-md-4 justify-content-center" data-aos="fade-up" data-aos-delay="300">
-					<div class="container image-box align-items-center justify-content-center">
-						<div class="row">
-							<img src="/static/media/qrcode-transparent.png" alt="" style="max-width: 90vw; max-height: 90vh" />
-						</div>
-					</div>
+			<div class="row mt-5 justify-content-center" data-aos="fade-up" data-aos-delay="150">
+				<div class="justify-content-center" data-aos="fade-up" data-aos-delay="100">
+					<a href="{% url 'socials-button-page' %}">
+						<button class="container image-box align-items-center justify-content-center next-button">ቀጣይ</button>
+					</a>
 				</div>
+			</div>
+			<div class="col-xl-6 col-lg-8 mt-5 text-center" data-aos="fade-up" data-aos-delay="150">
+				<p>እግዚአብሔር ምስሌነ ሰንበት ት/ቤት</p>
 			</div>
 		</div>
 	</section>
 	<section id="about" class="about section dark light-background">
 		<div class="container" data-aos="fade-up" data-aos-delay="100">
 			<div class="row gy-4">
-				<div class="col-lg-6 order-1 order-lg-2">
-					<img src="static/media/ad-1.jpg" class="img-fluid" alt="" />
-				</div>
 				<div class="col-lg-6 order-2 order-lg-1 content">
 					<h3>8ኛው ዙር ፍኖተ ሕይወት መንፈሳዊ ጉዞ</h3>
-					<p class="fst-italic">"ለሚታዘዙለት ሁሉ የዘላለም መዳን ምክንያት ሆነላቸው" ዕብ 5፥10</p>
-					<ul>
-						<li><i class="bi bi-check2-all"></i> <span>ታኅሳስ 13 2017 ዓ.ም  </span></li>
-					</ul>
-					<p>ወደ:- ጥንታዊትና ታሪካዊት ስእለት ሰሚዋ ሆለታ ደብረ ገነት ቅድስት ኪዳነ ምሕረት ቤተክርስቲያን 📌 ከአዲስ አበባ በ35 ኪ ሜ ቅርብ ርቀት የሚገኝ ቤተክርስቲያን ሲሆን ቤተክርስቲያኑ ከዋናው መንገድ እጅግ ቅርብ በሆነ ቦታ ይገኛል። የቤተክርስቲያኑ ሊቃውንት አባቶች እና የአካባቢው ምእመናንም በጉጉት እየጠበቁ ይገኛሉ •።</p>
 				</div>
 			</div>
 		</div>
 	</section>
 </main>
-<style></style>
+<style>
+	.next-button {
+		border-radius: 10%;
+		background-color: transparent;
+		color: #0a409c;
+		border: 6px solid #0a409c;
+		font-size: 9rem;
+		padding: 1px 2px;
+		font-weight: bold;
+		cursor: pointer;
+		transition: all 0.3s ease;
+	}
+
+	.next-button:hover,
+	.color-button:focus {
+		background-color: #0a409c;
+		border: 6px solid #0a409c;
+		color: #f0ad4e;
+	}
+
+	.next-button:active {
+		background-color: #0a409c;
+		color: #f0ad4e;
+	}
+</style>
 {% endblock content %}

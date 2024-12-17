@@ -13,8 +13,8 @@ def about(request):
 def socials(request):
     return render(request, template_name='home/socials.html')
 
-def socials(request):
-    return render(request, template_name='home/socials.html')
+def socials_button(request):
+    return render(request, template_name='home/socials-button.html')
 
 links = """
         http://youtube.com/@EMislene
